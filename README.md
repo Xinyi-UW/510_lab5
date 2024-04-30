@@ -2,6 +2,8 @@
 
 # this is a lab about learning frontend development
 
+# Finally I achieve a chatbox that can let architects to get inspiration during their ideation design stage.Basing on current outcome, I still need to learn more about RAG and knowledge graph part, which can build a better visualized interface for architects.
+
 Getting Started
 
 python -m venv venv

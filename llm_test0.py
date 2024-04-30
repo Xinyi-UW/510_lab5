@@ -33,13 +33,11 @@ st.markdown("""
         }
         .user-message {
             background-color: #6E30EF;
-            color: white;
             margin-left: auto;
             text-align: right;
         }
         .ai-message {
             background-color: #EDDE07;
-            color: black;
             margin-right: auto;
             text-align: left;
         }
@@ -51,14 +49,6 @@ st.markdown("""
             margin-bottom: 25px;
             max-height: 500px;
         }
-        .stTextInput>div>div>input {
-            color: white;
-            background-color: #6E30EF;
-        }
-        h1 {
-            color: #6E30EF;
-            font-family: 'Comic Sans MS', 'Comic Neue', cursive;
-        }
         body {
             background-color: white;
         }
@@ -66,7 +56,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("Architect Inspiration Playground")
-st.image("images/archicollage.jpg") 
 
 # Chat history display area
 if 'chat_messages' not in st.session_state:
@@ -85,7 +74,7 @@ with chat_container:
 
 # Chat input area
 with st.form("chat_form"):
-    user_input = st.text_input("Get your architectural inspirations!! :", key="input_text", placeholder="Type a message...")
+    user_input = st.text_input("Message:", key="input_text", placeholder="Type a message...")
     submit_button = st.form_submit_button("Send")
 
 if submit_button and user_input:
